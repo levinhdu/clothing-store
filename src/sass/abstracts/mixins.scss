@@ -1,0 +1,10 @@
+$destop-width: 1145px;
+
+@mixin desktop { @media (max-width: #{$desktop-width}) {     
+    @content;  
+   } 
+}
+
+@include desktop(){
+    
+}

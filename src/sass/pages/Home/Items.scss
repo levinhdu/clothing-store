@@ -1,0 +1,51 @@
+.items{
+    &__title{
+        p{
+            margin: 15px 0 0 0;
+            font-size: 15px;
+        }
+    }
+}
+
+.items__card{
+    &__col:hover .items__card__col__buy{
+        display: block;
+    }
+    .ant-card-body{
+        padding-left:  5px  !important;
+    }
+    &__col{
+        position: relative;
+        margin: 10px 0;
+        p{ 
+            font-weight: bold;
+        }
+        &__new{
+            position: absolute;
+            top: 0px;
+            left: 8px;
+            background: black;
+            padding: 0 8px;
+            border-top-left-radius: 8px;
+            span{
+                color: white;
+            }
+        }
+        &__buy:hover{
+            background: #ccc;
+            cursor: pointer;
+        }
+        &__buy{
+            display: none;
+            position: absolute;
+            top: 35%;
+            left: 35%;
+            background: black;
+            padding: 8px;
+            span{
+                color: white;
+            }
+
+        }
+    }
+}

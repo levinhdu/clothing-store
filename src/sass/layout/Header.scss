@@ -1,0 +1,18 @@
+.header{
+    padding: 0 16px;
+    font-size: 24px;
+
+    &__col{
+        font: inherit;
+        margin: 24px 0;
+        &__icon{
+            margin-right: 16px;
+        }
+    }
+
+    .header__col--position{
+        cursor: pointer;
+        text-align: right;
+        margin-inline-start: 33.33333333333333%;
+    }
+}
