@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "../../sass/pages/Home/Subscribe.scss";
+import "../../sass/pages/HomePage/Subscribe.scss";
 import { Button, Input, Form } from "antd";
 
 Subscribe.propTypes = {};

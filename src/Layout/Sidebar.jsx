@@ -1,10 +1,14 @@
 import { Layout, Menu } from "antd";
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "../sass/layout/Sidebar.scss";
 const { Sider } = Layout;
 
 Sidebar.propTypes = {};
+
+const SubMenu = Menu.SubMenu;
+
 function getItem(label, key, icon, children) {
   return {
     key,
@@ -14,18 +18,18 @@ function getItem(label, key, icon, children) {
   };
 }
 const items = [
-  getItem("Shirts", "1"),
-  getItem("Dresses", "2"),
-  getItem("Jeans", "sub1", "", [
-    getItem("Skinny", "3"),
-    getItem("Relaxed", "4"),
-    getItem("Bootcut", "5"),
-    getItem("Straight", "6"),
+  getItem(<Link to='/shirts'>Shirts</Link>, "1"),
+  getItem(<Link to='/dresses'>Dresses</Link>, "2"),
+  getItem(<Link to='/'>Jeans</Link>, "sub1", "", [
+    getItem(<Link to='/skinny'>Skinny</Link>, "3"),
+    getItem(<Link to='/relaxed'>Relaxed</Link>, "4"),
+    getItem(<Link to='/bootcut'>Bootcut</Link>, "5"),
+    getItem(<Link to='/straight'>Straight</Link>, "6"),
   ]),
-  getItem("Jackets", "9"),
-  getItem("Gymwear", "10"),
-  getItem("Blazers", "11"),
-  getItem("Shoes", "12"),
+  getItem(<Link to='/jackets'>Jackets</Link>, "9"),
+  getItem(<Link to='/gymwear'>Gymwear</Link>, "10"),
+  getItem(<Link to='/blazers'>Blazers</Link>, "11"),
+  getItem(<Link to='/shoes'>Shoes</Link>, "12"),
 ];
 const items2 = [
   getItem("Contact", "1"),
@@ -35,19 +39,9 @@ const items2 = [
 
 function Sidebar(props) {
   return (
-    <Sider
-      className="sidebar"
-      theme="light"
-    //   style={{
-    //     overflow: "auto",
-    //     height: "100vh",
-    //     position: "fixed",
-    //     top: 0,
-    //     bottom: 0,
-    //   }}
-    >
+    <Sider className="sidebar" theme="light">
       <div className="sidebar__logo">
-        <h3>LOGO</h3>
+        <Link to='/'><h3>LOGO</h3></Link>
       </div>
       <Menu
         className="sidebar__menu"

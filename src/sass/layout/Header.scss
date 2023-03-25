@@ -5,8 +5,25 @@
     &__col{
         font: inherit;
         margin: 24px 0;
-        &__icon{
-            margin-right: 16px;
+        
+        &__cart{
+            position: relative;
+            display: inline;
+            &__icon{
+                margin-right: 10px;
+            }
+            &__count{
+                position: absolute;
+                top: -5px;
+                right: 2px;
+                background: red;
+                border-radius: 1000px;
+                color: white;
+                width: 19px;
+                font-size: 12px;
+                text-align: center;
+                font-weight: bold;
+            }
         }
     }
 

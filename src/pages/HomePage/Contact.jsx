@@ -13,7 +13,7 @@ import {
   LinkedinOutlined,
 } from "@ant-design/icons";
 import PropTypes from "prop-types";
-import "../../sass/pages/Home/Contact.scss";
+import "../../sass/pages/HomePage/Contact.scss";
 import { Col, Row, Form, Input, Button } from "antd";
 
 const style = {

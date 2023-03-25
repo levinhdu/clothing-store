@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '../../sass/pages/Home/Display.scss'
+import '../../sass/pages/HomePage/Display.scss'
 import { Button } from 'antd';
 
 
